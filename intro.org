@@ -1,0 +1,120 @@
+#+title: Intro
+#+author:gabriel
+
+* What is red teaming ?
+a red team is a group of hacker with varying backgrounds that test the organization s infrastructure
+
+a red team operations is similar to a penetration test, but is more targeted
+
+one of the main goal of a Red Team is to test organization s detection & response capabilities
+
+The attack performed by Red Teams are similar to the attack techniques employed by threat actors having malicious intent
+
+- *red team emulation* --> copy attacks techniques of Threat Actors
+- *red team simulation* --> mimics behaviour of threat actors
+
+A red team will try to get in and access sensitive information in any way possible, as quietly as possible leaving no footprint behind
+
+Big enterprises like Microsoft and Defence agencies uses cyber red teams to conduct assessments on their own networks
+
+* Penetration Tests x Red Teaming
+
+** pentests
+an attack againts a host, network or any application to measure and identify risks associated with the exploitation of a target environment
+
+more emphasis on reducing exposes vulnerabilities etc.
+
+scope is limited - 1 to 2 specific systems or networks
+
+makes assumptions about the environment, may not test where is isn't told to go
+
+uses tools present at that time during testing
+
+** red teaming
+process of using real-world tactics, techniques employed by threat actors having goals to measure the effectiveness of the people, technologies used to defend an organization
+
+more emphasis on training and measuring risks & defence capabilities of an organization
+
+specific part of (or the entire) organization
+
+makes no assumptions, attempts to compromise everywhere, pivots and changes strategy, techniques if/when needed
+
+constantly researching new exploits, vulnerabilities & implement attacks with new tools as soon as it is discovered
+
+* red team attack lifecycle
+high-level overview of red team attack lifecycle is shown below
+
+this cycle tells the beginning to end phases of an Red team engagement in an organization
+
+[[./imgs/lifecycle.png]]
+
+** extensive OSINT
+this phases generally deals with gathering more and more information about the target organization
+
+social media sites, platforms where employees are generally active are of primary focus
+
+attackers with access to tons of information available in the internet tries to find the sensitive ones which can be used for further exploitation purposes
+
+** initial access & execution
+initial access consists of using various entry vectors to gain access within the internal network
+
+there are ways like exploitation to external remote services, mis-configurations in web applications etc... which may lead as gateway to the internal network
+
+there are a lot of ways to get initial access, however it depends on the technologies used by the organization which could be identified in the previous section
+
+execution is attacker-controlled code running on the target machine. For example an adversary might use a remote access tool to run command prompt that does network discovery
+
+** persistence and privilege escalation
+attacker always look for hidden techniques to keep access to systems across restarts, changed credentials etc... which could cut-off attackers access
+
+resetting passwords of a low-profile user & uusing it as a backdoor to network
+
+privilege escalation is gaining higher-level permissions on a system or network. Common approaches are to take advantage of systems weaknesses, misconfigurations and vulnerabilities
+
+elevated access accounts
+- SYSTEM/root level
+- local administrator
+- user with admin-like capabilities
+- privileged groups
+
+** lateral movement
+lateral movement is when an attacker compromises or gains control of one asset within a network and then moves on from that device to others within the same network
+
+attackers might install their own remote access tools to accomplish lateral movement or use legitimate credentials with native network and operation systems tools, which may be stealthier
+
+examples
+- *internal phishing* --> attackers may use internal phishing to gain access to additional information or exploit other users within the same organization after they already have access to accounts or systems withn the environment
+
+- *remote services* --> threat actors may used valid credentials to log into services like SSH, VNC, RDP and then perform operations etc...
+
+[[./imgs/perimeter.png]]
+
+** defensive evasion
+defensive evasion deals with avoiding detection thoughout the compromise
+
+attacker bypass detection by ofuscating malicious scripts, hiding in trusted processes, and disabling security software etc...
+
+defensive evasion benefits from discovery but is more related to understanding how an attacker can avoid network defenders, wheter through certain processes or knowing which security tools are on a system
+
+example -->
+- impair defenses --> includes disabling firewalls and anti-virus and detection capabilities that defenders can use to audit activity and identify malicious behaviour
+
+** discovery
+attacker head for situational awareness where ther try to figure out organization environment
+
+these techniques help adversaries observer the environment and orient themselves before deciding how to act
+
+this helps a lot in gathering the whereabouts and critical assets located in the network architecture
+
+examples -->
+- file and directory discovery --> attackers enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system
+
+** data collection
+data collection is the process of gathering and measuring information from establish system
+
+the data collected can be any sensitive information present in a system/network
+
+example -->
+- archive collected data --> an adversary may compress or encrypt data that is collected prior to exfiltration
+
+- clipboard data --> attackers may collect data stored in the clipboard from users copying information within or between applications

@@ -1,0 +1,30 @@
+#+title: Red Team Infra
+#+author: gabriel
+
+* red team infrastructure
+- *C2 Server* -->
+  these are used by attackers to maintain communications with compromised systems within a target network
+
+[[./imgs/c2.png]]
+
+- *Payload server* -->
+  this is a dedicated server hosting all the malicious scripts, executable etc... and this is accessible from both attacker and victim
+
+[[./imgs/payload_server.png]]
+
+*Redirector server* -->
+a redirector is a system that proxies all traffic to your command and control server (C2)
+
+threat actors doesn't use on system to launch attacks and get shells. They setup multiple systems to act as pivot points (redirectors) back to their C2 server
+
+these prevent the client from beign able to see our actual C2, and should be easy to spin up and tear down
+
+** adversary emulation
+is mimicking of someone or something else, based on threat intelligence, you determine FIN10 group is most likely to target an organization
+
+to emulate this adversary, you mimic the TTPs they use and test those in your environment. you behave exactly like they would
+
+** adversary simulation
+you want to make it look like a real attack is happening while there is no real adversary
+
+you make use of TTPs that work in the environment at hand, irrespective of which APT actually uses them
