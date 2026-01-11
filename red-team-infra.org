@@ -28,3 +28,32 @@ to emulate this adversary, you mimic the TTPs they use and test those in your en
 you want to make it look like a real attack is happening while there is no real adversary
 
 you make use of TTPs that work in the environment at hand, irrespective of which APT actually uses them
+
+* DMZ demilitarized zone network
+it is a network used to connect hosts that provide an interface to untrusted external network
+
+the systems that are most vulnerable to attack are those that provide services to users outside of the local area network, , such as e-mail, web and domain name systems (DNS) servers are present inside a DMZ
+
+the ultimate goal of a DMZ is to allow access to resources from untrusted networks while keeping the private network secured
+
+* MZ militarized zone network
+zone having maximum security and is one of the most secure segment in the environment, contains critical information about the organization, all operations in the organization is managed from Militarized Network
+
+* Tactics, Techniques and procedures (TTPs)
+TTPs explains how threat actors orchestrate and manage cyber-attacks, it explains the methods associated with a specific threat actor or a group of treath actors
+
+- ~tactic~ is the highest-level description of threat actor behaviour
+- ~technique~ give a more detailed description of behaviour in the context of a tactic
+- ~procedures~ an even lower-level, highly detailed description in the context of a technique
+
+* malware phase types
+** singles
+these are self-contained payload assigned to do a specific task that is, create a user, or a bind shell
+
+** stagers
+these types payloads are used to download payloads to the target machine from the attacker machine
+- creates a network connection between attacker & compromised machine
+- *payload/windows/shell/bind_tcp*
+
+** stages
+these are the large payload downloaded by the stagers & then executed, assigned to do complex tasks like remote desktop

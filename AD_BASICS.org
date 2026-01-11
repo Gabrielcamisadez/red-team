@@ -1,0 +1,14 @@
+#+title: Ad Basics
+#+Author:gabrie
+
+* AD objects
+the physical entities that make up an organized network
+
+** domain users
+- user account that are allowed to authenticate to machines/servers in the domain
+
+** domain groups (global groups)
+- it can be used to assign permissions to access resources in any domain
+
+** domain computers
+- machines that are connected to a domain and hence become a member of a domain
