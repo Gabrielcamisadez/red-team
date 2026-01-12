@@ -15,7 +15,7 @@ The attack performed by Red Teams are similar to the attack techniques employed 
 
 A red team will try to get in and access sensitive information in any way possible, as quietly as possible leaving no footprint behind
 
-Big enterprises like Microsoft and Defence agencies uses cyber red teams to conduct assessments on their own networks
+Big e nterprises like Microsoft and Defence agencies uses cyber red teams to conduct assessments on their own networks
 
 * Penetration Tests x Red Teaming
 
