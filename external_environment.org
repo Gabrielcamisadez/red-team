@@ -1,0 +1,58 @@
+#+title: External Environment
+#+author:gabriel
+
+
+* web-based
+once vulnerabilities/mis-configurations have been identified one can go for exploitation
+
+the server which hosts the website is called web server and typically listens on TCP port 80. In some cases, the service could be configured to run on ports other than the default one, as a small step towards security
+
+the client via browser, connects to the port and hence they can communicate or transfer data between each other
+
+while communicating the web service responds by providing the requested content, such as HTML, JavaScript etc...
+
+the webserver communicated with database server at the backend to fetch contents from the database
+
+* layers
+the set of rules or protocols used to communicate between the server and client runs on layer 7 in the OSI model
+
+[[./imgs/layers.png]]
+
+the encryption between both sides is done at presentation layer. Hence the HTTPS (secure socket layer) works at layer 6
+
+* cyber kill chain
+- reconnaissance
+- scanning and enumeration
+- gaining access
+- post exploitation
+- maintaining persistence
+- removing footprints
+
+* externally exposed service exploitation
+it is the exploitation of the services in the web or network which can be easily accessed
+
+adversary makes an active connection with the externally exposed server to identify and leverage existing loopholes
+
+adversary with adequate knowledge of target organization's infrastructure and technologies identify the weakest link and try to exploit it
+
+externally exposed service can exist in Web or the network
+
+** information gathering
+in cyber kill chain this phase is focussed on obtaining the information
+
+- *passive reconnaissance* -->
+
+also referred as Passive Information Gathering is a technique to obtain information about the target without making an actual connection to the target
+
+we will obtain the information that is available publicy. using this technique we can be never be detected by the target
+
+but passive reconnaissance has it own limitation which is it will obtain a specific amount of information
+
+- *active reconnaissance* -->
+
+also referred as active information gathering is a technique to obtain information about the target extensively making an actual connection to the target
+
+there is a high chance of detection as we are making an active connection with the target
+
+but passive reconnaissance has it's own limitation which is it will obtain a specific amount of information
+
