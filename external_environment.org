@@ -56,3 +56,5 @@ there is a high chance of detection as we are making an active connection with t
 
 but passive reconnaissance has it's own limitation which is it will obtain a specific amount of information
 
+
+

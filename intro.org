@@ -118,3 +118,5 @@ example -->
 - archive collected data --> an adversary may compress or encrypt data that is collected prior to exfiltration
 
 - clipboard data --> attackers may collect data stored in the clipboard from users copying information within or between applications
+
+  
