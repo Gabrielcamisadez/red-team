@@ -1,0 +1,19 @@
+#+title: Internal Environment
+#+author:gabriel
+
+* basic infos
+busca por users no domain -->
+#+begin_src powershell
+net user /domain
+#+end_src
+
+uso do powershell com bypass de policy -->
+#+begin_src powershell
+powershell -ep bypass
+#+end_src
+
+pegar os DCs do ambiente -->
+#+begin_src powershell
+Get-ADDomainController -Filter * | Select-Object HostName
+#+end_src
+
