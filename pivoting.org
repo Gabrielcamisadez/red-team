@@ -1,0 +1,14 @@
+#+title: Network Pivoting
+#+author: tr26530es
+
+* intro
+network pivoting is a technique used to move from one compromised system to another within a network, allowing to access addtional resources that may be otherwise unreachable
+
+when an attacker gains access to a network throug a vulnerable system, they can use that system as a base to explore and exploit other connected systems, the compromised system acts as a pivot point
+
+| Technique | Description
+| Port Forwarding | Redirects traffic from one IP/port to another, allowing access to internal services.
+| VPN Pivoting | Establishes a VPN connection from the compromised machine to access remote networks.
+| Proxy Pivoting | Sets up a local proxy server to forward connections through the compromised machine.
+| Routing Tables | Modifies the routing table of the compromised machine to create new routes for traffic.
+
