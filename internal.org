@@ -1,2 +1,0 @@
-#+title: Internal Red Teaming with AD
-#+author:gabriel
